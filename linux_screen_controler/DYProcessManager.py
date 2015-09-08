@@ -25,7 +25,7 @@ class ComponentStatus(object):
         self.local_ip = s.getsockname()[0]
         self.int_ip = s1.getsockname()[0]
 
-        self.conn=MySQLdb.connect(user='douyuZ',passwd='BqzUkS55bf1ULSSwSv8D',host='192.168.4.81', port=11306)
+        self.conn=MySQLdb.connect(user='username',passwd='password',host='192.168.4.11', port=3306)
         self.cursor_components = self.conn.cursor()
         self.cursor_msgserver = self.conn.cursor()
         self.cursor_components.execute("use stt_config")
